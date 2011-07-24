@@ -1,0 +1,183 @@
+
+header {
+	background: #F1F1F1;
+	border-bottom: #D2D2D2 1px solid;
+	height: 121px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	overflow: hidden;
+	padding: 16px 16px 0;
+}
+
+/* STATUS */
+#status {
+	display: block;
+	position: absolute;
+	height: 40px;
+	background: #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+	top: -20px;
+	right: 120px;
+	width: 400px;
+	font-size: 10px;
+	line-height: 16px;
+}
+	#status #connection {
+		position: absolute;
+		left: 8px;
+		bottom: 2px;
+		background: url('../images/temp-header-sprite.png') -287px 1px no-repeat;
+		padding: 0 0 0 18px;
+	}
+	#status #last-update {
+		position: absolute;
+		right: 8px;
+		text-align: right;
+		bottom: 2px;
+	}
+
+/* INFO */
+#info {
+	display: block;
+	float: left;
+	width: 300px;
+}
+	#info #icon {
+		display: block;
+		float: left;
+		width: 74px;
+		height: 74px;
+		background: url('../images/icon-64x64.png') left top no-repeat;
+	}
+	#info #wallet-name {
+		font-size: 16px;
+		border: none;
+	}
+	#info #wallet-size {
+		font-size: 11px;
+		line-height: 18px;
+	}
+		#info #wallet-size span {
+			font-family: Arial;
+			margin: 0 12px 0 0;
+		}
+			#info #wallet-size span span {
+				font-family: "DroidSansRegular";
+				margin: 0;
+				float: none;
+			}
+		#info #wallet-size .btc {
+			font-size: 14px;
+		}
+	#info #wallet-file {
+		font-size: 11px;
+		line-height: 18px;
+	}
+
+/* CONTROL */
+#control {
+	float: right;
+}
+	#control a {
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: 0 0 0 8px;
+		float: left;
+		cursor: pointer;
+	}
+	#control a span {
+		display: none;
+	}
+	#control #safecontrol {
+		background: url('../images/temp-header-sprite.png') -627px -11px no-repeat;
+	}
+	#control #exit {
+		background: url('../images/temp-header-sprite.png') -672px -11px no-repeat;
+	}
+
+/* NAVIGATION */
+
+header nav {
+	clear: both;
+	padding: 12px 0 0 ;
+	overflow: auto;
+}
+header nav ul {
+	overflow: auto;
+}
+	header nav li {
+		float: left;
+		padding-right: 4px;
+		height: 30px;
+		background: #F1F1F1;
+		border-radius: 3px;
+		box-shadow: inset 0 0 3px rgba(0, 0, 0, 0);
+		-webkit-transition: box-shadow 150ms, background 450ms;
+		
+	}
+	header nav li.active {
+		background: #E8E8E8;
+		box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+	}
+	header nav li.active:hover {
+		background: #E8E8E8;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+	}
+	header nav li:hover {
+		background: #F5F5F5;
+		box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+	}
+		header nav li a {
+			display: block;
+			font-size: 15px;
+			line-height: 23px;
+			cursor: pointer;
+			color: #333;
+			padding: 4px 0 0 4px;
+			height: 30px;
+		}
+		header nav li.active a {
+		}
+	header nav a span {
+		cursor: pointer;
+		background: url('../images/temp-header-sprite.png') no-repeat;
+		padding: 0 4px 0 26px;
+		display: block;
+	}
+	header nav li.no-rel a span {
+		color: #300;
+		font-style: italic;
+	}
+		header nav .dashboard a span {
+			background-position: 1px -87px;
+		}
+		header nav .dashboard.active a span {
+			background-position: 1px -126px;
+		}
+		header nav .send_recieve a span {
+			background-position: -116px -87px;
+		}
+		header nav .send_recieve.active a span {
+			background-position: -116px -126px;
+		}
+		header nav .accounts a span {
+			background-position: -251px -87px;
+		}
+		header nav .accounts.active a span {
+			background-position: -251px -126px;
+		}
+		header nav .log a span {
+			background-position: -367px -87px;
+		}
+		header nav .log.active a span {
+			background-position: -367px -126px;
+		}
+		header nav .settings a span {
+			background-position: -500px -87px;
+		}
+		header nav .settings.active a span {
+			background-position: -500px -126px;
+		}
+

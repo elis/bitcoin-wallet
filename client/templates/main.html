@@ -1,0 +1,62 @@
+$def with (content='', info = None)
+<!doctype html>
+<html>
+<head>
+	<title>Bitcoin Wallet</title>
+	<link rel="stylesheet" href="/static/css/grid.css" media="screen" >
+
+	<link href="/static/css/reset.css" rel="stylesheet"/>
+	<link href="/static/css/main.css" rel="stylesheet"/>
+	<script type="text/javascript" src="/static/js/head.min.js"></script>
+	<script type="text/javascript" src="/static/js/init.js"></script>
+	<link rel="icon" href="/static/images/icon-16.png" sizes="16x16" />
+	<link rel="icon" href="/static/images/icon-32.png" sizes="32x32" />
+	<link rel="icon" href="/static/images/icon-48.png" sizes="48x48" />
+	<link rel="shortcut icon" href="/static/favicon.ico"/>
+
+</head>
+<body>
+<div id="main">
+	<header>
+		<section id="status">
+			<div id="connection">Connected to Bitcoin Network</div>
+			<div id="last-update">Blocks: <span class="block-count"></span></div>
+		</section>
+
+		<section id="info">
+			<div id="icon"></div>
+			<h1 id="wallet-name">Your Bitcoin Wallet</h1>
+			<p id="wallet-size">
+				<span class="btc"><span class="amount"></span> &#0579;</span>
+				<!--
+				<span class="usd"><span>4,451</span> $$</span>
+				<span class="nis"><span>16,733</span> &#8362;</span>
+				-->
+			</p>
+			<!--
+			<div id="wallet-file">
+				Wallet: <span>I:\my-wallet.dat</span>
+			</div>
+			-->
+		</section>
+		<section id="control">
+			<a id="safecontrol"><span>Safe Control</span></a>
+			<a id="exit"><span>Exit</span></a>
+		</section>
+		<nav id="main-nav">
+			<ul>
+				<li class="dashboard"><a rel="dashboard"><span>Dashboard</span></a></li>
+				<li class="send_recieve active"><a rel="send_recieve"><span>Send/Recieve</span></a></li>
+				<li class="accounts"><a rel="accounts"><span>Accounts</span></a></li>
+				<li class="log"><a><span>Transactions</span></a></li>
+				<li class="settings"><a><span>Settings</span></a></li>
+				<li class="template"><a rel="template"><span>Template</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="content" class="container_12">
+			$:content
+	</div>
+</div>
+</body>
+</html>
