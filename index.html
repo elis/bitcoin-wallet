@@ -9,7 +9,18 @@
     body {
       margin-top: 1.0em;
       background-color: #FFF;
-background-color: -webkit-linear-gradient(top, #FFF, #EFEDE8);
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.15, rgb(239,237,232)),
+    color-stop(0.58, rgb(250,250,250))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(239,237,232) 15%,
+    rgb(250,250,250) 58%
+);
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
